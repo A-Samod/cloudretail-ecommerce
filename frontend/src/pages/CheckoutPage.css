@@ -1,0 +1,748 @@
+/* Checkout Page Styles - CloudRetail Design */
+
+.checkout-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.checkout-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Checkout Header with Logo and Auth Buttons */
+.checkout-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.checkout-logo {
+  text-decoration: none;
+}
+
+.checkout-logo h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.checkout-auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.signup-btn-checkout {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+  padding: 0.625rem 1.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.signup-btn-checkout:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.login-btn-checkout {
+  background: #1a1a1a;
+  border: none;
+  color: white;
+  padding: 0.625rem 1.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-btn-checkout:hover {
+  background: #333;
+}
+
+.checkout-back {
+  margin-bottom: 2rem;
+}
+
+.checkout-header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: opacity 0.3s;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.checkout-container {
+  background: white;
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* Order Summary (Left Side) */
+.order-summary-checkout {
+  padding: 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.checkout-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.checkout-item {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.checkout-item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.checkout-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkout-item-details .item-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.checkout-item-details .item-sku {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+.item-quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.item-qty-btn {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #666;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-qty-btn:hover {
+  background: #f5f5f5;
+  border-color: #5ec5b6;
+}
+
+.item-qty-display {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  min-width: 25px;
+  text-align: center;
+}
+
+.checkout-item-price-section {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.checkout-item-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.item-remove-btn {
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.item-remove-btn:hover {
+  color: #ff4444;
+}
+
+/* Shipping Section */
+.shipping-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.shipping-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.shipping-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.shipping-option label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.shipping-option svg {
+  color: #666;
+}
+
+.change-btn {
+  background: transparent;
+  border: none;
+  color: #666;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.shipping-price {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
+
+/* Vouchers Section */
+.vouchers-section {
+  margin-bottom: 2rem;
+}
+
+.vouchers-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.voucher-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.voucher-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.voucher-option label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.voucher-option label svg {
+  color: #666;
+}
+
+.voucher-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.voucher-check {
+  margin-left: auto;
+}
+
+.voucher-discount {
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.apply-voucher-btn {
+  background: transparent;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: auto;
+  display: block;
+  transition: all 0.3s;
+}
+
+.apply-voucher-btn:hover {
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Payment Form (Right Side) */
+.checkout-form {
+  padding: 0;
+}
+
+.checkout-form .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-input::placeholder {
+  color: #ccc;
+}
+
+.expiry-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.expiry-month,
+.expiry-year {
+  width: 60px;
+  text-align: center;
+  padding: 0.875rem 0.5rem;
+}
+
+.expiry-separator {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.payment-method-link {
+  text-align: center;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.payment-method-link a {
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.payment-method-link a:hover {
+  opacity: 0.7;
+}
+
+/* Summary Section */
+.payment-summary {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.payment-summary h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.summary-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.summary-item-row span:last-child {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.summary-row-checkout {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.summary-row-checkout span:last-child {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.summary-row-checkout.voucher-row .discount-text {
+  color: #e74c3c;
+}
+
+.summary-total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Submit Button */
+.submit-order-btn {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1.125rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-order-btn:hover:not(:disabled) {
+  background-color: #333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-order-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Empty Checkout */
+.empty-checkout {
+  text-align: center;
+  padding: 3rem;
+}
+
+.empty-checkout p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-content {
+    padding: 1rem;
+  }
+
+  .checkout-container {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    gap: 2rem;
+  }
+
+  .checkout-item {
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+  }
+
+  .checkout-item-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .checkout-item-price-section {
+    grid-column: 2;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Success Modal Styles */
+.success-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.success-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #999;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: #1a1a1a;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.success-icon {
+  margin: 0 auto 1.5rem;
+  animation: scaleIn 0.5s ease 0.2s both;
+}
+
+.failure-icon {
+  margin: 0 auto 1.5rem;
+  animation: scaleIn 0.5s ease 0.2s both;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.success-modal h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+}
+
+.success-modal .order-number {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.failure-reason {
+  font-size: 1rem;
+  color: #ef4444;
+  margin: 0.5rem 0 0 0;
+  font-weight: 500;
+}
+
+.success-modal .order-number strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.success-modal .btn-primary,
+.success-modal .btn-secondary {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.success-modal .btn-primary {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+}
+
+.success-modal .btn-primary:hover {
+  background: #333;
+}
+
+.success-modal .btn-secondary {
+  background: transparent;
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+}
+
+.success-modal .btn-secondary:hover {
+  background: #f5f5f5;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "email-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function to send order confirmation emails using AWS SES",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.400.0"
+  }
+}
